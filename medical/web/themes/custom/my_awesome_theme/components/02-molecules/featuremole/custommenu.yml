@@ -1,0 +1,13 @@
+image_src: 'https://placeimg.com/320/180/any'
+image_modifiers:
+  - 'zoom'
+productname_heading: 'Blue Gloves'
+product_price: '$1.99'
+icon_modifiers: 
+  - 'yellow'
+iconstar_items:
+ - star: 'star'
+ - star: 'star'
+ - star: 'star'
+ - star: 'star'
+ - star: 'star' 

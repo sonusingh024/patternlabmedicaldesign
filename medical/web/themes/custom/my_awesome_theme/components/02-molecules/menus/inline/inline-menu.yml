@@ -1,0 +1,11 @@
+inline_menu_items:
+  - title: 'Home'
+    url: '#'
+  - title: 'Shop'
+    url: '#'
+  - title: 'Products'
+    url: '#'
+  - title: 'About'
+    url: '#'  
+  - title: 'Contacts'
+    url: '#'   

@@ -1,0 +1,21 @@
+<div {{ bem('f-20 feature_card') }}>
+  <div {{ bem('feature-img') }}>
+    {% include '@atoms/images/image/_image.twig' with {} %}
+  </div>
+  <div {{ bem('feature-text') }}>
+    {% include '@atoms/text/headings/_heading.twig' with {
+      heading_level: 5,
+      heading: productname_heading
+    } %}
+    {% block product_price %}
+    <div class='price'>
+      {{ product_price }}
+      </div>
+    {% endblock %}
+      {% for item in iconstar_items %}
+     {% include '@atoms/icon/iconatom.twig' with {
+     iconclass: item.star,
+      } %}
+       {% endfor %}
+  </div>
+</div>

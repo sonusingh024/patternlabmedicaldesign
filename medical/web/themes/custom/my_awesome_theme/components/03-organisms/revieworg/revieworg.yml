@@ -1,0 +1,13 @@
+review_heading: 'Latest reviews'
+iconclass: 'quote-left'
+icon_modifiers: 
+ - 'yellow'
+review_items: 
+ -  para_review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis diam at libero aliquam, sed vestibulum elit feugiat.'
+    name_heading: 'John Smith'
+ -  para_review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis diam at libero aliquam, sed vestibulum elit feugiat.'
+    name_heading: 'John Smith'
+ -  para_review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis diam at libero aliquam, sed vestibulum elit feugiat.'
+    name_heading: 'John Smith'
+ -  para_review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis diam at libero aliquam, sed vestibulum elit feugiat.'
+    name_heading: 'John Smith'   

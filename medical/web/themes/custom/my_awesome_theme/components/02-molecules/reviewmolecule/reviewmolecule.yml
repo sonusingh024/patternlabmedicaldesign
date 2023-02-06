@@ -1,0 +1,10 @@
+paragraph_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis diam at libero aliquam, sed vestibulum elit feugiat.'
+reviewname_heading: 'John Smith'
+icon_modifiers: 
+  - 'yellow'
+iconstar_items:
+ - star: 'star'
+ - star: 'star'
+ - star: 'star'
+ - star: 'star'
+ - star: 'star'    

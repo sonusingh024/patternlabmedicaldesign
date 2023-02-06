@@ -1,0 +1,40 @@
+@import '../../00-base/00-defaults/01-variables';
+.herotext {
+  @media (max-width: 768px) {
+    justify-content: center;
+   }
+  h2 {
+    font-family: $font-inria;
+    font-size: 3.8rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  .wrapper {
+    display: flex;
+    margin-bottom: 2rem;
+    .new-price p{
+      font-size: 3.8rem;
+      line-height: 1.1;
+      font-family: $font-inria;
+      color: #ffc800;
+      padding: 0;
+      margin: 0;
+    }
+    .old-price p{
+      text-decoration: line-through;
+      color: #bbbbbb;
+      padding-left: 1rem;
+      font-family: $font-inria;
+      font-size: 2rem;
+      line-height: 1.3;
+      margin: 0;
+    }
+  }
+}

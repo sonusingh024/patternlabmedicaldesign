@@ -1,0 +1,16 @@
+@import '../../00-base/00-defaults/01-variables';
+.reviewsection {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: #f0f2f5;
+  .reviewtext{
+   justify-content: center;
+   h2{
+    font-family: $font-inria;
+    font-size: 3rem;
+    line-height: 1.1;
+    color: $bg-color;
+    margin-left: .5rem;
+   }
+  }
+}

@@ -1,0 +1,18 @@
+{% set hero_base_class = 'hero' %}
+<div {{ bem(hero_base_class) }}>
+  <div {{ bem('container') }}>
+    <div {{ bem('d-flex jc-center media-textcenter') }}>
+      {% include '@molecules/hero/heromolecule.twig' with {} %}
+      <div {{ bem('f-50 herotag') }}>
+        <div class="price-wrapper">
+          <h4>
+            <strong>only</strong>
+          </h4>
+          <h5>
+            &nbsp;<strong>1$</strong>&nbsp;
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

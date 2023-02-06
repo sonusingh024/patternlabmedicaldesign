@@ -1,0 +1,14 @@
+@import '../../00-base/00-defaults/01-variables';
+.featuresection {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #ffffff;
+  h2 {
+    color: $bg-color;
+    text-align: center;
+    font-family: $font-inria;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+}

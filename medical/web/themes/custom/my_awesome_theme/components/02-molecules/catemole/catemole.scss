@@ -1,0 +1,31 @@
+@import '../../00-base/00-defaults/01-variables';
+.category_card {
+  padding: 0.5rem;
+  .card-wrapper {
+    background: #f0f2f5;
+    .text-wrapper {
+      padding: 1rem 1.5rem;
+      padding-right: 0;
+      @media (max-width: 768px) {
+        padding: 2rem 1rem 1.5rem;
+      }
+      h5 {
+        font-family: $font-inria;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: $bg-color;
+      }
+    }
+    .img-wrapper {
+      height: 180px;
+      @media (max-width: 992px) {
+        order: -1;
+      }
+      img {
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

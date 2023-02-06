@@ -1,0 +1,8 @@
+<div {{ bem('icon-wrapper f-14 p-lr') }}>
+  {% include '@atoms/icon/iconatom.twig' with {
+    iconclass: mole_big_icon
+  } %}
+   {% block icon_content %}
+    {{ icon_content }}
+  {% endblock %}
+</div>

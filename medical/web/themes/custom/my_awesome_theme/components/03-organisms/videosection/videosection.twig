@@ -1,0 +1,24 @@
+{% set video_base_class = 'videosection' %}
+<div {{ bem(video_base_class) }}>
+  <div {{ bem('container') }}>
+    <div {{ bem('d-flex jc-center media-textcenter') }}>
+      {% include '@molecules/hero/heromolecule.twig' with {
+        hero_heading: video_heading,
+        hero_para: video_para,
+        newprice: false,
+        oldprice: false,
+      } %}
+      <div {{ bem('f-50 videoimg') }}>
+        {% include '@atoms/images/image/_image.twig' with {
+          image_src: video_img
+        } %}
+        <div {{ bem('icon-wrap') }}>
+          {% include '@atoms/icon/iconatom.twig' with {
+            icon_modifiers: ['none'],
+            iconclass: playicon
+          } %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

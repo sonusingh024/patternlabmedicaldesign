@@ -1,0 +1,25 @@
+@import '../../00-base/00-defaults/01-variables';
+.reviewcard {
+  padding: 2rem;
+  background-color: #fff;
+  .content-wrap {
+    p {
+      color: $bg-color;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      font-family: $font-inria;
+      margin-bottom: 1rem;
+    }
+    h5 {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: $bg-color;
+      font-weight: 600;
+      font-style: normal;
+      font-family: $font-inria;
+    }
+  }
+  .soc-item{
+   line-height: 1.5;
+  }
+}

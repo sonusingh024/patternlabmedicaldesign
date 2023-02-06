@@ -1,0 +1,6 @@
+hero_heading: 'Medical<br>Gloves Shop'
+hero_para: 'Buy a big set at a discount'
+link_modifiers:
+  - secondary
+newprice: '$15.99'
+oldprice: '$29.99'

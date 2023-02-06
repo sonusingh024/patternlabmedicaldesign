@@ -1,0 +1,14 @@
+{% set iconsection_base_class = 'iconsection' %}
+<div {{ bem(iconsection_base_class) }}>
+  <div {{ bem('container') }}>
+    <div {{ bem('d-flex jc') }}>
+      {% for item in iconsection_items %}
+        {% include '@molecules/iconmole/iconmole.twig' with {
+          mole_big_icon: item.org_big_icon,
+          icon_content: item.icon_content,
+          icon_modifiers: ['alt']
+        } %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

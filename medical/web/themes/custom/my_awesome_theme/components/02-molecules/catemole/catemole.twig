@@ -1,0 +1,21 @@
+<div {{ bem('f-33 category_card') }}>
+  <div {{ bem('card-wrapper') }}>
+    <div {{ bem('d-flex') }}>
+      <div {{ bem('text-wrapper f-50 media-textcenter') }}>
+        {% include '@atoms/text/headings/_heading.twig' with {
+          heading_level: 5,
+          heading: cate_heading
+        } %}
+        {% include '@atoms/custombutton/custombutton.twig' with {
+          atom_cta_content: mole_cta_content
+        } %}
+      </div>
+
+      <div {{ bem('img-wrapper f-50') }}>
+        {% include '@atoms/images/image/_image.twig' with {
+          image_srcset: cate_mole_img
+        } %}
+      </div>
+    </div>
+  </div>
+</div>

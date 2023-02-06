@@ -1,0 +1,19 @@
+{% set banner_base_class = 'banner' %}
+<div {{ bem(banner_base_class) }}>
+  <div {{ bem('container') }}>
+    {% include '@atoms/text/headings/_heading.twig' with {
+      heading_level: 2,
+      heading: banner_heading
+    } %}
+    <div {{ bem('d-flex') }}>
+      {% for item in category_items %}
+        {% include '@molecules/catemole/catemole.twig' with {
+          cate_heading: item.category_heading,
+          mole_cta_content: item.category_cta,
+          cate_mole_img: item.category_img,
+          link_modifiers: ['none']
+        } %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,190 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: clr(background);
+  color: clr(text);
+
+  @include body-copy;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.main {
+  @include wrapper;
+
+  display: block; /* Fix for IE weirdness */
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+// ------------custom css--------
+.container-fluid {
+  width: 100%;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.jc {
+  justify-content: center;
+}
+.tc {
+  text-align: center;
+}
+.f-14 {
+  flex: 0 0 14.28%;
+  max-width: 14.28%;
+  @media (max-width: 992px) {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+  @media (max-width: 768px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.f-20 {
+  flex: 0 0 20%;
+  max-width: 20%;
+  @media (max-width: 992px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @media (max-width: 768px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.f-25 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  @media (max-width: 992px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @media (max-width: 576px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.f-33 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  @media (max-width: 992px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @media (max-width: 768px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.f-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  @media (max-width: 992px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.tc {
+  text-align: center;
+}
+.f-66 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+  @media (max-width: 768px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.sb-show-main.sb-main-padded {
+  padding: 0;
+}
+.w-50 {
+  width: 50%;
+}
+.pb-2,
+.py-2 {
+  padding-bottom: 0.5rem !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+.p-lr {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.p-2lr {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jc-center {
+    justify-content: center;
+  }
+  .media-textcenter {
+    text-align: center;
+  }
+}
+.p-tb{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

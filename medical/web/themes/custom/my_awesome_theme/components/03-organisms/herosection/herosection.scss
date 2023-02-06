@@ -1,0 +1,42 @@
+@import '../../00-base/00-defaults/01-variables';
+.hero {
+  background-image: url('/images/background11.jpeg');
+  background-position: center;
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  .herotag{
+    display: flex;
+    align-items: center;
+    @media (max-width: 992px) {
+        margin-bottom: 3rem;
+        order: -1;
+      }  
+  }
+}
+.price-wrapper {
+  background: #ffc800;
+  margin: auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  h4 {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $bg-color;
+    margin: 0;
+    font-family: $font-inria;
+  }
+  h5{
+    font-size: 3rem;
+    line-height: 1.1;
+    text-align: center;
+    color: #103178;
+    margin: 0;
+    font-family: $font-inria;
+  }
+}

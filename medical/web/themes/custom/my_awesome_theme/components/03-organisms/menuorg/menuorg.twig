@@ -1,0 +1,33 @@
+{% set menu_base_class = 'menu' %}
+ <div {{ bem('menusection') }}>
+<div {{ bem('container') }}>
+  <div {{ bem(menu_base_class) }}>
+    <div {{ bem('logo', [], menu_base_class) }}>
+      {% include '@atoms/images/image/_image.twig' with {
+        image_src: logo_image,
+        image_alt: logo_alt
+      } %}
+      {% include '@atoms/text/headings/_heading.twig' with {
+        heading_level: 1,
+        heading: logo_heading
+      } %}
+    </div>
+    <div {{ bem('list', [], menu_base_class) }}>
+      {% include '@molecules/menus/inline/inline-menu.twig' with {} %}
+    </div>
+    <div {{ bem('parahelp', [], menu_base_class) }}>
+      {% include '@atoms/text/text/01-paragraph.twig' with {
+        paragraph_content: help_para
+      } %}
+    </div>
+    <div {{ bem('icon', [], menu_base_class) }}>
+      {% for item in icon_items %}
+        {% include '@atoms/icon/iconatom.twig' with {
+          iconclass: item.org_icon,
+          icon_modifiers: 'default'
+        } %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</div>

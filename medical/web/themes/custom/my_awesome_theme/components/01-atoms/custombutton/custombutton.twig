@@ -1,0 +1,10 @@
+{% set cta_base_class = 'btn' %}
+
+{% set additional_attributes = {
+  class: bem(cta_base_class, cta_modifiers, cta_blockname)
+} %}
+<div {{ bem('btn') }}>
+  {% include '@atoms/links/link/link.twig' with {
+    link_content: atom_cta_content
+  } %}
+</div>

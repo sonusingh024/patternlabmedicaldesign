@@ -1,0 +1,20 @@
+<div {{ bem('f-25 p-lr p-tb') }}>
+  <div {{ bem('reviewcard') }}>
+    <div class="content-wrap">
+      {% include '@atoms/text/text/01-paragraph.twig' with {
+      {{ paragraph_content }}
+      } %}
+      {% include '@atoms/text/headings/_heading.twig' with {
+      heading_level: 5,
+      heading: reviewname_heading
+      } %}
+    </div>
+     <div class="soc-item">
+      {% for item in iconstar_items %}
+     {% include '@atoms/icon/iconatom.twig' with {
+     iconclass: item.star,
+      } %}
+       {% endfor %}
+     </div>
+  </div>
+</div>

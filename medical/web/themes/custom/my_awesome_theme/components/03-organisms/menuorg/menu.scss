@@ -1,0 +1,67 @@
+@import '../../00-base/00-defaults/01-variables';
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    display: flex;
+    min-height: 70px;
+    flex-shrink: 0;
+    align-items: center;
+    margin-right: 0;
+    padding: 0;
+    transition: all 0.3s;
+    word-break: break-word;
+    z-index: 1;
+    img {
+      height: 3rem;
+      margin-right: 0.8rem;
+      transition: margin 0.3s ease-in-out;
+    }
+    h1 {
+      font-family: $font-inria;
+      font-size: 1.4rem;
+      color: $bg-color;
+      font-weight: 700;
+      line-height: 1.4rem;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  &__list {
+    .inline-menu {
+      .inline-menu__item {
+        margin: 0;
+        .inline-menu__link {
+          color: #103178;
+          font-family: $font-inria;
+          font-size: 1.1rem;
+          text-transform: capitalize;
+          padding: 0 0.3em !important;
+          margin: 0.667em 0.5em !important;
+          &:hover{
+            color: #47b5ed ;
+          }
+        }
+      }
+    }
+  }
+  &__parahelp {
+    padding: 0 2rem;
+    color: #5b6c8f;
+    font-family: $font-inria;
+    p {
+      margin: 0;
+    }
+  }
+  &__icon {
+    .icon {
+      padding: 0.5rem;
+      i {
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}

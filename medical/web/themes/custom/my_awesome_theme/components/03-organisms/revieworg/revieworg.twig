@@ -1,0 +1,21 @@
+{% set review_base_class = 'reviewsection' %}
+<div {{ bem(review_base_class) }}>
+  <div {{ bem('container-fluid') }}>
+    <div {{ bem('d-flex jc-center media-textcenter reviewtext') }}>
+      {% include '@atoms/icon/iconatom.twig' %}
+      {% include '@atoms/text/headings/_heading.twig' with {
+        heading_level: 2,
+        heading: review_heading
+      } %}
+
+      <div {{ bem('d-flex jc-center media-textcenter reviewgrid') }}>
+        {% for item in review_items %}
+          {% include '@molecules/reviewmolecule/reviewmolecule.twig' with {
+            paragraph_content: item.para_review,
+            reviewname_heading: item.name_heading
+          } %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

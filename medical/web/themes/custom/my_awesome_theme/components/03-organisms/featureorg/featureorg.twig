@@ -1,0 +1,21 @@
+{% set feature_base_class = 'featuregrid' %}
+<div {{ bem('featuresection') }}>
+  <div {{ bem(feature_base_class) }}>
+    <div {{ bem('container') }}>
+      {% include '@atoms/text/headings/_heading.twig' with {
+        heading_level: 2,
+        heading: feature_heading
+      } %}
+      <div {{ bem('d-flex jc') }}>
+        {% for item in feature_items %}
+          {% include '@molecules/featuremole/custommenu.twig' with {
+            image_src: item.orgimage_src,
+            productname_heading: item.orgproduct_name,
+            product_price: item.orgproduct_price,
+            image_modifiers: ['zoom']
+          } %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
